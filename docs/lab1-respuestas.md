@@ -34,7 +34,7 @@ a la hora de hacer un merge. Este conflicto se produce porque hay dos versiones 
 **7.¿Por qué NO se debe hacer git commit --amend sobre un commit que ya se subió con git push?**
 
 Porque un commit que ya se subió con git push, queda publicado y puede estar siendo objeto de trabajo por otro colaborador. Si mientras otros desarrolladores están
-trabajando sobre una versión publicada, el autor hace un git --amend, potencialmente puede echar a perder el trabajo que otros colaboradores hayan realizado sobre 
+trabajando sobre una versión publicada, el autor hace un 'git commit--amend', potencialmente puede echar a perder el trabajo que otros colaboradores hayan realizado sobre 
 ese commit
 
 **8.Si borras por accidente la carpeta .git de tu proyecto, ¿qué se pierde exactamente? ¿Se pierde también el código fuente que está en el disco?**
