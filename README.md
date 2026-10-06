@@ -7,3 +7,5 @@ This line was added from Github web interface
 
 Name: Miguel Garcia
 Professor: Richard Avilés Lopez
+See
+CONTRIBUTING.md for branch and commit conventions.
