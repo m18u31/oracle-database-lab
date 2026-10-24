@@ -1,0 +1,264 @@
+== Esperando a que oralab-26ai este healthy (max. 5 min) ==
+  intento 1: healthy
+== Estado final ==
+oralab-26ai  Up 6 seconds (healthy)
+== Registro de arranque (docker logs) ==
+Starting Oracle Net Listener.
+Oracle Net Listener started.
+Starting Oracle AI Database instance FREE.
+Oracle AI Database instance FREE started.
+
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Mon Oct 12 17:42:47 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+#########################
+DATABASE IS READY TO USE!
+#########################
+The following output is now a tail of the alert.log:
+CLID: P
+PDB$SEED(2):Autotune of undo retention is turned on. 
+PDB$SEED(2):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+FREEPDB1(3):Autotune of undo retention is turned on. 
+2026-10-12T17:42:46.311911+00:00
+FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
+2026-10-12T17:42:47.806471+00:00
+FREEPDB1(3):TABLE AUDSYS.AUD$UNIFIED: ADDED INTERVAL PARTITION SYS_P496 (4487) VALUES LESS THAN (TIMESTAMP' 2026-10-13 00:00:00')
+2026-10-12T17:42:49.382049+00:00
+===========================================================
+Dumping current patch information
+===========================================================
+No patches have been applied
+===========================================================
+2026-10-12T17:42:49.717425+00:00
+FREEPDB1(3):Resize operation completed for file# 13, fname /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf, old size 409600K, new size 419840K
+2026-10-12T17:42:51.702012+00:00
+TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P656 (3) VALUES (( 1509902213, TO_DATE(' 2026-10-12 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P657 (3) VALUES (( 1509902213, TO_DATE(' 2026-10-12 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P660 (3) VALUES (( 1509902213, TO_DATE(' 2026-10-12 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+2026-10-12T17:53:19.457540+00:00
+Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 624640K, new size 655360K
+2026-10-12T18:03:55.295593+00:00
+Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 655360K, new size 665600K
+2026-10-12T18:03:55.300712+00:00
+FREEPDB1(3):Resize operation completed for file# 13, fname /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf, old size 419840K, new size 440320K
+2026-10-12T22:00:04.358724+00:00
+Begin automatic SQL Tuning Advisor run for special tuning task "SYS_AUTO_SQL_TUNING_TASK".
+End automatic SQL Tuning Advisor run for special tuning task "SYS_AUTO_SQL_TUNING_TASK".
+2026-10-12T22:00:07.977042+00:00
+TABLE SYS.WRI$_OPTSTAT_HISTHEAD_HISTORY: ADDED INTERVAL PARTITION SYS_P676 (46306) VALUES LESS THAN (TO_DATE(' 2026-10-13 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+TABLE SYS.WRI$_OPTSTAT_HISTGRM_HISTORY: ADDED INTERVAL PARTITION SYS_P679 (46306) VALUES LESS THAN (TO_DATE(' 2026-10-13 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+2026-10-12T22:00:48.615963+00:00
+Resize operation completed for file# 11, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 25600K, new size 30720K
+2026-10-12T22:00:50.669543+00:00
+Resize operation completed for file# 11, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 30720K, new size 35840K
+2026-10-12T22:01:15.500827+00:00
+Resize operation completed for file# 11, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 35840K, new size 40960K
+2026-10-12T22:01:25.528394+00:00
+Resize operation completed for file# 11, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 40960K, new size 46080K
+Resize operation completed for file# 11, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 46080K, new size 51200K
+2026-10-12T22:01:25.996283+00:00
+Thread 1 cannot allocate new log, sequence 3
+Private strand flush not complete
+  Current log# 2 seq# 2 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+2026-10-12T22:01:29.004593+00:00
+Thread 1 advanced to log sequence 3 (LGWR switch),  current SCN: 3179012
+  Current log# 3 seq# 3 mem# 0: /opt/oracle/oradata/FREE/redo03.log
+2026-10-12T22:01:29.329288+00:00
+ARC2 (PID:190): Archived Log entry 2 added for B-1237845575.T-1.S-2 LOS:0x00000000002f5ec4 NXS:0x0000000000308204 NAB:378397 ID 0x5a003b85 LAD:1 [krse.c:4896]
+2026-10-12T22:08:05.061408+00:00
+Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 665600K, new size 675840K
+2026-10-13T00:08:25.242851+00:00
+FREEPDB1(3):Resize operation completed for file# 13, fname /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf, old size 440320K, new size 450560K
+2026-10-13T02:08:54.559935+00:00
+Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 675840K, new size 686080K
+Starting Oracle Net Listener.
+Oracle Net Listener started.
+Starting Oracle AI Database instance FREE.
+Oracle AI Database instance FREE started.
+
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Thu Oct 22 10:32:52 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+#########################
+DATABASE IS READY TO USE!
+#########################
+The following output is now a tail of the alert.log:
+PDB$SEED(2):Autotune of undo retention is turned on. 
+2026-10-22T10:32:50.861039+00:00
+PDB$SEED(2):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+FREEPDB1(3):Autotune of undo retention is turned on. 
+2026-10-22T10:32:52.034077+00:00
+FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
+2026-10-22T10:32:53.068415+00:00
+FREEPDB1(3):TABLE AUDSYS.AUD$UNIFIED: ADDED INTERVAL PARTITION SYS_P516 (4497) VALUES LESS THAN (TIMESTAMP' 2026-10-23 00:00:00')
+2026-10-22T10:32:53.475735+00:00
+===========================================================
+Dumping current patch information
+===========================================================
+No patches have been applied
+===========================================================
+2026-10-22T10:32:56.799763+00:00
+TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P716 (4) VALUES (( 1509902213, TO_DATE(' 2026-10-19 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P717 (4) VALUES (( 1509902213, TO_DATE(' 2026-10-19 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P720 (4) VALUES (( 1509902213, TO_DATE(' 2026-10-19 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+2026-10-22T10:48:25.047786+00:00
+TABLE SYS.ACTIVITY_TABLE$: ADDED INTERVAL PARTITION SYS_P736 (2) VALUES LESS THAN (202)
+FREEPDB1(3):TABLE SYS.ACTIVITY_TABLE$: ADDED INTERVAL PARTITION SYS_P536 (2) VALUES LESS THAN (202)
+Stopping container.
+SIGTERM received, shutting down database!
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Thu Oct 22 11:12:59 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 2026-10-22T11:12:59.224347+00:00
+Shutting down ORACLE instance (immediate) (OS id: 2954)
+Shutdown is initiated by sqlplus@e0295a5f2e1e (TNS V1-V3).
+Stopping background process SMCO.
+Shutting down instance: further logons disabled
+2026-10-22T11:12:59.403914+00:00
+Stopping background process CJQ0
+Stopping background process MMNL.
+2026-10-22T11:12:59.553216+00:00
+Process termination requested for pid 549 (Q001) [source = rdbms], [info = 2] [request issued by pid: 547, uid: 54321]
+Stopping background process MMON.
+alter pluggable database all close immediate
+2026-10-22T11:12:59.823296+00:00
+FREEPDB1(3):JIT: pid 2954 requesting stop
+2026-10-22T11:12:59.829166+00:00
+FREEPDB1(3):Stopped service freepdb1
+Completed: Pluggable database FREEPDB1 closed services=None
+Completed: alter pluggable database all close immediate
+PDB$SEED(2):JIT: pid 2954 requesting stop
+License high water mark = 5
+
+Data Pump shutdown in progress
+ALTER DATABASE CLOSE NORMAL
+alter pluggable database all close immediate
+Completed: alter pluggable database all close immediate
+alter pluggable database all close immediate
+Completed: alter pluggable database all close immediate
+Stopping change tracking
+Database closed.
+Database dismounted.
+2026-10-22T11:13:01.108223+00:00
+Thread 1 closed at log sequence 4
+Successful close of redo thread 1
+2026-10-22T11:13:01.159660+00:00
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+2026-10-22T11:13:01.206444+00:00
+JIT: pid 2954 requesting stop
+JIT: pid 2954 requesting stop
+ORACLE instance shut down.
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+LSNRCTL for Linux: Version 23.26.3.0.0 - Production on 22-OCT-2026 11:13:02
+
+Copyright (c) 1991, 2026, Oracle.  All rights reserved.
+
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=0.0.0.0)(PORT=1521)))
+The command completed successfully
+Starting Oracle Net Listener.
+Oracle Net Listener started.
+Starting Oracle AI Database instance FREE.
+Oracle AI Database instance FREE started.
+
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Thu Oct 22 11:15:36 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+#########################
+DATABASE IS READY TO USE!
+#########################
+The following output is now a tail of the alert.log:
+2026-10-22T11:15:35.171001+00:00
+Opening with Resource Manager plan: DEFAULT_CDB_PLAN 
+CLID: P
+PDB$SEED(2):Autotune of undo retention is turned on. 
+PDB$SEED(2):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+FREEPDB1(3):Autotune of undo retention is turned on. 
+2026-10-22T11:15:36.722641+00:00
+FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
